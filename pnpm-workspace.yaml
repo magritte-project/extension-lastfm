@@ -2,7 +2,7 @@ allowBuilds:
     "@scarf/scarf": true
     esbuild: true
 minimumReleaseAgeExclude:
-    - "@magritte/api@0.2.0"
-    - "@magritte/fonts@0.2.0"
-    - "@magritte/rpc@0.2.0"
-    - "@magritte/sdk@0.2.0"
+    - "@magritte/api@0.2.0 || 0.2.1"
+    - "@magritte/fonts@0.2.0 || 0.2.1"
+    - "@magritte/rpc@0.2.0 || 0.2.1"
+    - "@magritte/sdk@0.2.0 || 0.2.1"

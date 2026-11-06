@@ -1,4 +1,4 @@
-import { ExtensionHost } from "@magritte/sdk"
+import { beginForwardingMeaningfulUIEvents, ExtensionHost } from "@magritte/sdk"
 import { QueryClient, QueryClientProvider } from "@tanstack/react-query"
 
 import "@magritte/fonts/fira-go.css"
@@ -42,6 +42,9 @@ try {
             }),
         }),
     })
+
+    // Set up UI event forwarding
+    await beginForwardingMeaningfulUIEvents(extensionHost)
 
     // Scrobbling runs whether or not the extension is on screen, which is why
     // the manifest asks to run eagerly and in the background

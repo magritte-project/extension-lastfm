@@ -167,17 +167,17 @@ importers:
   .:
     dependencies:
       '@magritte/api':
-        specifier: ^0.2.0
-        version: 0.2.0(zod@4.6.7)
+        specifier: ^0.2.1
+        version: 0.2.1(zod@4.6.7)
       '@magritte/fonts':
-        specifier: ^0.2.0
-        version: 0.2.0
+        specifier: ^0.2.1
+        version: 0.2.1
       '@magritte/rpc':
-        specifier: ^0.2.0
-        version: 0.2.0(zod@4.6.7)
+        specifier: ^0.2.1
+        version: 0.2.1(zod@4.6.7)
       '@magritte/sdk':
-        specifier: ^0.2.0
-        version: 0.2.0(@magritte/api@0.2.0(zod@4.6.7))(@magritte/rpc@0.2.0(zod@4.6.7))(zod@4.6.7)
+        specifier: ^0.2.1
+        version: 0.2.1(@magritte/api@0.2.1(zod@4.6.7))(@magritte/rpc@0.2.1(zod@4.6.7))(zod@4.6.7)
       '@phosphor-icons/react':
         specifier: ^2.1.10
         version: 2.1.10(react-dom@19.3.1(react@19.3.1))(react@19.3.1)
@@ -264,24 +264,24 @@ packages:
   '@jridgewell/trace-mapping@0.3.31':
     resolution: {integrity: sha512-zzNR+SdQSDJzc8joaeP8QQoCQr8NuYx2dIIytl1QeBEZHJ9uW6hebsrYgbz8hJwUQao3TWCMtmfV8Nu1twOLAw==}
 
-  '@magritte/api@0.2.0':
-    resolution: {integrity: sha512-cipDqCd4HGk+TfnNITWWLIwVx+hAGROMn6BV2ouPWQ1JJ3tgZH2+o1hJ+zzOlPMmJKFePoRbJSRGFvONnVv3GQ==}
+  '@magritte/api@0.2.1':
+    resolution: {integrity: sha512-AtbC3NCObutE0HdBWUBBxNkJUFrbtZlDDwQ22MIe68SxdQa4iGwzDSr3QEe/c55uoTIzhfUiGvuwveJvFV4mcA==}
     peerDependencies:
       zod: ^4.6.7
 
-  '@magritte/fonts@0.2.0':
-    resolution: {integrity: sha512-EV7hwldhsgFostTKPEnv3L9NffiCgVJi8XuzudjQqMRnWneoEwa3hypkNZixVW1rcrXzGt9txAbZIOSudmPZaA==}
+  '@magritte/fonts@0.2.1':
+    resolution: {integrity: sha512-q2fU1UdXEP3bXr3OevndHf+NS3IeWfPAevYXL5rIYFZDK+Pcxo6ZCtyvGky88ynOzjPrbw/SapKYvoBWWJi2Lw==}
 
-  '@magritte/rpc@0.2.0':
-    resolution: {integrity: sha512-b3n90CnUwhxEqLlcBWSk1A6mAw8o10xkBNXfEcmeuCZMUt/UL75cQwXZpdWKoffI27J0hEM0S3CrEWTPzv47UQ==}
+  '@magritte/rpc@0.2.1':
+    resolution: {integrity: sha512-6mSaoBWQqet8TiMsudbQUq5iPYCQB3SmsGZkzQs4kkYKXMSNebJ/gyr8F4yx8EBuSxZwD7Pe9Bld1Dg4sUVd6g==}
     peerDependencies:
       zod: ^4.6.7
 
-  '@magritte/sdk@0.2.0':
-    resolution: {integrity: sha512-XdjiWBbOqmXyl1Ggt9WWHc4Qji6VmLMcVmRClZIwLNky8gnavuvQ22+q9Tm8LGEVFV0GSwDCOiLUcRzQ7KqsYg==}
+  '@magritte/sdk@0.2.1':
+    resolution: {integrity: sha512-KEChPKvfiPIQc3tJjpT6q0+ICDtC1pU+WRS8csr1v6DaCelIceA/IqZeAyCo7RoNdgIdKVLKxiWt6AC7PIZ86g==}
     peerDependencies:
-      '@magritte/api': ^0.2.0
-      '@magritte/rpc': ^0.2.0
+      '@magritte/api': ^0.2.1
+      '@magritte/rpc': ^0.2.1
       zod: ^4.6.7
 
   '@oxc-project/types@0.156.0':
@@ -1430,20 +1430,20 @@ snapshots:
       '@jridgewell/resolve-uri': 3.1.2
       '@jridgewell/sourcemap-codec': 1.6.0
 
-  '@magritte/api@0.2.0(zod@4.6.7)':
+  '@magritte/api@0.2.1(zod@4.6.7)':
     dependencies:
       zod: 4.6.7
 
-  '@magritte/fonts@0.2.0': {}
+  '@magritte/fonts@0.2.1': {}
 
-  '@magritte/rpc@0.2.0(zod@4.6.7)':
+  '@magritte/rpc@0.2.1(zod@4.6.7)':
     dependencies:
       zod: 4.6.7
 
-  '@magritte/sdk@0.2.0(@magritte/api@0.2.0(zod@4.6.7))(@magritte/rpc@0.2.0(zod@4.6.7))(zod@4.6.7)':
+  '@magritte/sdk@0.2.1(@magritte/api@0.2.1(zod@4.6.7))(@magritte/rpc@0.2.1(zod@4.6.7))(zod@4.6.7)':
     dependencies:
-      '@magritte/api': 0.2.0(zod@4.6.7)
-      '@magritte/rpc': 0.2.0(zod@4.6.7)
+      '@magritte/api': 0.2.1(zod@4.6.7)
+      '@magritte/rpc': 0.2.1(zod@4.6.7)
       zod: 4.6.7
 
   '@oxc-project/types@0.156.0': {}
