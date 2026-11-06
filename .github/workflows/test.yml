@@ -1,0 +1,41 @@
+name: Test
+
+on:
+    push:
+        branches: ["main"]
+    pull_request:
+        branches: ["main"]
+
+jobs:
+    test:
+        name: "@magritte/extension-lastfm"
+        runs-on: ubuntu-latest
+        timeout-minutes: 5
+
+        steps:
+            - name: Checkout
+              uses: actions/checkout@v4
+            - name: Setup asdf
+              uses: asdf-vm/actions/setup@v4
+            - name: Cache asdf
+              id: asdf-tools-cache
+              uses: actions/cache@v4
+              with:
+                  path: |
+                      /home/runner/.asdf
+                  key: ${{ runner.os }}-asdf-${{ hashFiles('**/.tool-versions') }}
+                  restore-keys: |
+                      ${{ runner.os }}-asdf-
+            - name: Install dependencies in .tool-versions
+              if: ${{ steps.asdf-tools-cache.outputs.cache-hit != 'true' }}
+              uses: asdf-vm/actions/install@v4
+            - name: Bootstrap
+              run: ./bootstrap
+            - name: Lint
+              run: pnpm lint
+            - name: Format
+              run: pnpm format
+            - name: Check Types
+              run: pnpm check-types
+            - name: Test
+              run: pnpm test

@@ -1,0 +1,25 @@
+#!/bin/sh
+
+if ! command -v asdf >/dev/null 2>&1; then
+    echo "Error: asdf not installed. Install <https://asdf-vm.com/> to continue." >&2
+    exit 1
+fi
+
+set -e
+
+# Add all required asdf plugins
+asdf plugin add nodejs
+asdf plugin add pnpm
+
+# Ensure all asdf plugins are up to date
+asdf plugin update nodejs
+asdf plugin update pnpm
+
+# Install project tooling
+asdf install
+
+# Set up the environment files
+[ ! -e .env ] && cp "$PWD/.env.example" "$PWD/.env"
+
+# Set up dependencies
+pnpm install
